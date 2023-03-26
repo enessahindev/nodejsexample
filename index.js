@@ -147,7 +147,7 @@ app.post("/api/product/add", upload.single("image"), async (req, res) => {
   }
 });
 
-//Mail Gönderme
+//Mail to Send
 app.get("/api/mail/send", function (req, res) {
   try {
     const transporter = nodemailer.getTransporter({
@@ -184,5 +184,5 @@ app.get("/api/mail/send", function (req, res) {
   }
 });
 
-//uygulama çalıştırma kodu
+// Application Started
 app.listen(5000, () => console.log("Application is Online..."));
